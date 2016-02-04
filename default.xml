@@ -12,6 +12,11 @@
            sync-c="true"
            sync-j="4" />
 
+
+  <project path="xposed_art" name="rovo89/android_art" remote="github" revision="xposed-marshmallow"/>
+  <project path="frameworks/base/cmds/xposed" name="rovo89/Xposed" remote="github" revision="master"/>
+
+
   <project path="build" name="copperheados/platform_build" groups="pdk" remote="github" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
