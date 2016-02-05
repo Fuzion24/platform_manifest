@@ -7,21 +7,25 @@
   <remote  name="github"
            fetch="https://github.com/"
            revision="refs/heads/marshmallow" />
+
   <default revision="refs/tags/android-6.0.1_r13"
            remote="aosp"
            sync-c="true"
            sync-j="4" />
 
 
-  <project path="xposed_art" name="rovo89/android_art" remote="github" revision="xposed-marshmallow"/>
+  <project path="art" name="rovo89/android_art" remote="github" revision="xposed-marshmallow"/>
   <project path="frameworks/base/cmds/xposed" name="rovo89/Xposed" remote="github" revision="master"/>
 
+  <!--
+      Disabled in favor of xposed's build of art
+     <project path="art" name="platform/art" groups="pdk" />
+  -->
 
   <project path="build" name="copperheados/platform_build" groups="pdk" remote="github" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
-  <project path="art" name="platform/art" groups="pdk" />
   <project path="bionic" name="copperheados/platform_bionic" groups="pdk" remote="github" />
   <project path="bootable/recovery" name="copperheados/platform_bootable_recovery" groups="pdk" remote="github" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" />
