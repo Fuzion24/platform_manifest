@@ -16,7 +16,7 @@
 
   <project path="art" name="rovo89/android_art" remote="github" revision="xposed-marshmallow"/>
   <project path="frameworks/base/cmds/xposed" name="rovo89/Xposed" remote="github" revision="master"/>
-  <project path="frameworks/XposedBridge" name="fuzion24/XposedBridge" remote="github" revision="xposed-marshmallow"/>
+  <project path="frameworks/XposedBridge" name="fuzion24/XposedBridge" remote="github" revision="art"/>
 
 
   <!--
